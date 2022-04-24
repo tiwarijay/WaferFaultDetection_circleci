@@ -112,9 +112,10 @@
 <body>
 
 	<!-- Navigation -->
-	<nav class="navbar navbar-light bg-light static-top">
+	<nav class="navbar navbar-light bg-info static-top">
 		<div class="container-fluid">
-			<a class="navbar-brand" href=""><img src="https://github.com/SarthakK337/WaferFaultDetection_circleci/blob/main/Img/IMG_20220424_191848.png" alt="Project" /></a>
+			<!-- <a class="navbar-brand" href=""><img src="https://github.com/SarthakK337/WaferFaultDetection_circleci/blob/main/Img/IMG_20220424_191848.png" alt="Project" /></a> -->
+			<h1 class="mx-auto">Project Submission</h1>
 		</div>
 	</nav>
 
@@ -124,16 +125,28 @@
 			<h4 class="my-4 title">Wafer Fault Detection</h4>
 			<br>
 			<div class="row">
-				<div class="col-md-12 col-xs-12">
+				<div class="mx-auto" >
 					<br/>
 					<form method="post" id="datafetch_form" enctype="multipart/form-data">
 						<div class="form-group files color">
-							<input type="text" name = "csvfile" id="csvfile" class="form-control" placeholder="Enter absolute file path." required>
+							<!-- <input type="text" name = "csvfile" id="csvfile" class="form-control" placeholder="Enter absolute file path." required> -->
+							<input type="file" name = "csvfile" id="csvfile", required>
 						</div>
 						<div class=""><button class="form-control btn-primary" id="customfile">Custom File Predict</button></div>
 					</form>
 				</div>
-				
+			</div>
+			<br/>
+			<br/>
+			<div class="row">
+				<div class="res-container  col-md-12 col-xs-12">
+					<div class="result-box shadow rounded-lg">
+						<h6 class="title">Results</h6>
+						<div class="json-result">
+							
+						</div>
+					</div>
+				</div>
 			</div>						
 		</div>
 	</section>
